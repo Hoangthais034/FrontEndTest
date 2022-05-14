@@ -1,91 +1,82 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
-
-*{
-    list-style: none;
-    text-decoration: none;
-    margin: 0;
+* {
     padding: 0;
+    margin: 0;
     box-sizing: border-box;
-    font-family: 'Open Sans', sans-serif;
+    font-family: Roboto,'Open Sans', 'Helvetica Neue', sans-serif;
 }
-
-body{
-    background: #f5f6fa;
+.container {
+    width: 1550px;
+    margin: 0;
 }
-
-.wrapper .sidebar{
-    background: rgb(5, 68, 104);
-    position: fixed;
-    top: 0;
-    left: 0;
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.side-1{
+    background-color: #191718;
     width: 150px;
-    height: 100%;
-    transition: all 0.5s ease;
 }
-.wrapper .sidebar ul li a{
-    display: block;
-    padding: 13px 30px;
-    border-bottom: 1px solid #10558d;
-    color: rgb(241, 237, 237);
+.home {
+    color: snow;
+    text-decoration: none;
+    padding: 14px 0px 11px 16px;
+}
+.nav {
     font-size: 16px;
-    position: relative;
+    text-decoration: none;
+    color: #AAAAAA;
+    padding: 14px 0px 11px 16px;
 }
-
-.wrapper .sidebar ul li a .icon{
-    color: #dee4ec;
-    width: 30px;
-    display: inline-block;
-}
-.wrapper .sidebar ul li a:hover,
-.wrapper .sidebar ul li a.active{
-    color: #0c7db1;
-
-    background:white;
-    border-right: 2px solid rgb(5, 68, 104);
-}
-.wrapper .sidebar ul li a:hover:before,
-.wrapper .sidebar ul li a.active:before{
+.side-1 li {
+    padding: 12.5px 0px;
     display: block;
 }
-.wrapper .section{
-    width: calc(100% - 225px);
-    margin-left: 225px;
-    transition: all 0.5s ease;
+.side-1 li:hover {
+    background-color: #5C5C5C;
 }
-
-.wrapper .section .top_navbar{
-    background: rgb(7, 105, 185);
-    height: 50px;
-    display: flex;
-    align-items: center;
-    padding: 0 30px;
+.side-2 {
+    margin-left: -500px;
 }
-#Discover{
-  margin: 20px 0px 0 150px;
-	background-repeat: no-repeat;
-	background-size: cover;
-	height: 280px;
-  display: flex;
-  justify-content: center;
+.logo{
+    margin: 10px 0px 20px 0px;
+    text-align: center;
 }
-.background-color{
-	background: #9F9F9F;
+.banner{
+    background-color: #EFEFEF;
+	padding: 10px 0px 20px 0px;
+    font-size: 16px;
+    text-align: center;
 }
-.text-dis{
-    font-size: 14px;
-  color: #737B7D;
+.titlebanner{
+    font-size: 18px;
+    padding: 25px 0px 14px 0px;
+    color: #000000;
+    text-align: center;
 }
-.pagediscover h4{
-  font-size: 18px;
-  color: #545454;
+.m-50{
+	margin: 0 50px;
 }
-.btn-discover{
-  font-size: 14px;
-  color: #3d66b3;
-  cursor: pointer;
-  font-weight: 800;
+.mt-30{
+	margin-top: 30px
 }
-.lucilius{
-  margin: 80px 0;
-	background: #fff;
+section{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap:56px;
+}
+.imgtext{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.news{
+    margin: 30px 0px 20px 0px;
+}
+.txnew{
+    margin-left: -60px;
+}
+.txnew,.txlast{
+    font-size: 13px;
+}
+footer{
+    margin: 200px 0px 30px -40px;
 }
