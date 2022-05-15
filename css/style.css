@@ -2,18 +2,17 @@
     box-sizing: border-box;
     font-family: Roboto,'Open Sans', 'Helvetica Neue', sans-serif;
 }
-body,
-html {
+:root {
+  --background: #0c0b0b;
+  --text: #aaaaaa;
+}
+body,html {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
   overflow-x: hidden;
   width: 100%;
   max-width: calc(1768px + 150px);
-}
-:root {
-  --background: #191718;
-  --text: #aaaaaa;
 }
 
 /* Navbar */
@@ -36,6 +35,12 @@ html {
   padding-left: 16px;
   padding-bottom: 11px;
 }
+.nav-item a {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--text);
+}
 .nav-item:hover{
   background-color: #5c5c5c;
   cursor: pointer;
@@ -44,12 +49,6 @@ html {
 .nav-item:hover a{
   color: #fff;
 }
-.nav-item a {
-  text-decoration: none;
-  font-size: 16px;
-  font-weight: 700;
-  color: var(--text);
-}
 /* Navbar-end */
 
 
@@ -57,10 +56,6 @@ html {
 .content{
   width: calc(100% - 150px);
   margin-left: 150px;
-}
-.wrapper{
-  max-width: 1510px;
-  padding: 0 130px;
 }
 
 .logo{
@@ -72,39 +67,42 @@ html {
 .logo img{
   width: 100%;
 }
+.wrapper{
+  max-width: 1510px;
+  padding: 0 130px;
+}
 /* Logo- end*/
 
 /* Main-content */
 .main-content{
+  padding: 0 130px;
   background: #efefef;
-  padding: 0 129px;
+  
 }
 .main-content h2{
   text-align: center;
-  padding-top: 38px;
+  padding-top: 40px;
 }
 .main-content p{
   text-align: center;
-  padding-bottom: 38px;
+  padding-bottom: 40px;
 }
 /* Main-content - End */
-
 
 /* Group */
 .group{
   display: flex;
 }
-
-.list-item{
-  margin-right: 50px;
-}
 .list-item-box{
   display: flex;
 }
+.list-item{
+  margin-right: 50px;
+}
 .list-item-box img{
-  width: 128px;
-  height: 128px;
-  margin-right: 16px;
+  width: 130px;
+  height: 130px;
+  margin-right: 15px;
   margin-bottom: 6px;
 }
 .list-item-box p{
@@ -133,17 +131,14 @@ html {
   .main-content {
     padding: 0 20px;
   }
-
   .group {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
-
 }
 /* Tablet-end */
 
 @media (min-width: 481px) and (max-width: 767px) {
-
   .wrapper {
     padding: 0 20px;
   }
@@ -154,7 +149,6 @@ html {
   .list-item {
     padding-top: 20px;
   }
-
   .main-content {
     padding: 0 20px;
   }
