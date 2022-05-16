@@ -18,13 +18,27 @@
           <li class="nav-item"><a href="">Contact</a></li>
         </ul>
       </div>
-
+<div class="nav-mb">	
+<div id="sideNav">
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>      
+</div>
+<div id="menuBtn">
+    <img src="img/menu.PNG" id="menu">
+</div>
+</div>		
       <div class="content">
         <div class="wrapper">
           <div class="logo">
-            <a href="">
               <img src="img/logoNCC 1.png" alt="" />
-            </a>
+        
           </div>
 
           <div class="main-content">
@@ -116,6 +130,18 @@
 
 	  <!---made Vu Thai Hoang--->
     <script>
+		var menuBtn = document.getElementById("menuBtn")
+var sideNav = document.getElementById("sideNav")
+var menu = document.getElementById("menu")
+
+menuBtn.onclick = function(){
+    if(sideNav.style.left == "-250px"){
+        sideNav.style.left = "0";
+    }
+    else{
+        sideNav.style.left = "-250px";
+    }
+}
     </script>
   </body>
 </html>
